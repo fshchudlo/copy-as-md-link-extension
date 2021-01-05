@@ -1,0 +1,20 @@
+{
+  "name": "As md-link",
+  "version": "1.0",
+  "description": "Creates a markdown link from current tab location",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "md-link-paste": {
+      "suggested_key": {
+        "default": "Ctrl + Space",
+        "mac": "Command + Space"
+      },
+      "description": "Copies current tab title and location to markdown link"
+    }
+  },
+  "permissions": ["https://*/*"]
+}
